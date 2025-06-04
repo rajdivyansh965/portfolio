@@ -28,18 +28,29 @@
 
     <main>
         <section id="hero">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
-                <p class="tagline" id="tagline" data-text="A Passionate [Your Profession/Field]"></p>
-                <p class="hero-description">Welcome to my personal space where I showcase my work, skills, and journey.</p>
-                <div class="hero-buttons">
-                    <a href="resume.pdf" download="YourName_Resume.pdf" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-paper-plane"></i> Get In Touch
-                    </a>
+            <!-- 3D Parallax Wrapper -->
+            <div class="hero-3d-wrap">
+                <!-- Background elements for parallax -->
+                <div class="hero-bg-particle particle1"></div>
+                <div class="hero-bg-particle particle2"></div>
+                <div class="hero-bg-particle particle3"></div>
+                <div class="hero-bg-particle particle4"></div>
+                <div class="hero-bg-particle particle5"></div>
+
+                <div class="hero-content-wrapper"> <!-- Wrapper for content to also have a subtle parallax -->
+                    <div class="container hero-content">
+                        <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+                        <p class="tagline" id="tagline" data-text="A Passionate [Your Profession/Field]"></p>
+                        <p class="hero-description">Welcome to my personal space where I showcase my work, skills, and journey.</p>
+                        <div class="hero-buttons">
+                            <a href="resume.pdf" download="YourName_Resume.pdf" class="btn btn-primary">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> Get In Touch
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,9 +85,8 @@
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects-grid">
-                    <!-- Example Project Card -->
                     <div class="project-card">
-                        <div class="project-image-placeholder"></div> <!-- Placeholder for project image/gif -->
+                        <div class="project-image-placeholder">Project 1 Visual</div>
                         <h3>Project Title 1</h3>
                         <p>A short description of your project. What was the goal? What technologies did you use? (e.g., React, Node.js, Python)</p>
                         <div class="project-links">
@@ -85,7 +95,7 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-image-placeholder"></div>
+                        <div class="project-image-placeholder">Project 2 Visual</div>
                         <h3>Project Title 2</h3>
                         <p>Another interesting project. Highlight key features or challenges. (e.g., API Integration, UI/UX focus)</p>
                          <div class="project-links">
@@ -94,7 +104,7 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-image-placeholder"></div>
+                        <div class="project-image-placeholder">Project 3 Visual</div>
                         <h3>Project Title 3</h3>
                         <p>A brief on a third project showcasing different skills or technologies. (e.g., Data Analysis, Machine Learning)</p>
                          <div class="project-links">
@@ -102,7 +112,6 @@
                             <a href="#" target="_blank" class="btn btn-small-secondary"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
-                    <!-- Add more project cards as needed -->
                 </div>
             </div>
         </section>
@@ -132,7 +141,6 @@
                             <a href="your-linkedin-url" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                             <a href="your-github-url" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             <a href="your-twitter-url" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <!-- Add more social links as needed -->
                         </div>
                     </div>
                 </div>
