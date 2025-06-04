@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#hero" class="logo-link"><h1 class="logo">Your Name</h1></a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+                <p class="tagline" id="tagline" data-text="A Passionate [Your Profession/Field]"></p>
+                <p class="hero-description">Welcome to my personal space where I showcase my work, skills, and journey.</p>
+                <div class="hero-buttons">
+                    <a href="resume.pdf" download="YourName_Resume.pdf" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="animated-section section-padding">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi there! I'm [Your Name], a dedicated and enthusiastic [Your Profession/Field] with a knack for
+                            [mention a key skill or passion, e.g., crafting elegant web solutions, solving complex data problems].
+                            My journey in [Your Field] has been driven by a constant curiosity and a desire to create impactful
+                            and user-centric experiences.
+                        </p>
+                        <p>
+                            I thrive in collaborative environments and I'm always eager to learn new technologies and methodologies.
+                            When I'm not [working/studying], you can find me [mention a hobby or interest].
+                        </p>
+                        <p>Key Skills: [Skill 1], [Skill 2], [Skill 3], [Modern Technology Stack]</p>
+                    </div>
+                    <div class="about-image">
+                        <!-- Optional: Add a professional photo of yourself -->
+                        <!-- <img src="your-photo.jpg" alt="Your Name"> -->
+                        <div class="placeholder-image">Your Photo Here</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animated-section section-padding">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Example Project Card -->
+                    <div class="project-card">
+                        <div class="project-image-placeholder"></div> <!-- Placeholder for project image/gif -->
+                        <h3>Project Title 1</h3>
+                        <p>A short description of your project. What was the goal? What technologies did you use? (e.g., React, Node.js, Python)</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-eye"></i> View Project</a>
+                            <a href="#" target="_blank" class="btn btn-small-secondary"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image-placeholder"></div>
+                        <h3>Project Title 2</h3>
+                        <p>Another interesting project. Highlight key features or challenges. (e.g., API Integration, UI/UX focus)</p>
+                         <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-eye"></i> View Project</a>
+                            <a href="#" target="_blank" class="btn btn-small-secondary"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image-placeholder"></div>
+                        <h3>Project Title 3</h3>
+                        <p>A brief on a third project showcasing different skills or technologies. (e.g., Data Analysis, Machine Learning)</p>
+                         <div class="project-links">
+                            <a href="#" target="_blank" class="btn btn-small"><i class="fas fa-eye"></i> View Project</a>
+                            <a href="#" target="_blank" class="btn btn-small-secondary"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="animated-section section-padding">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="contact-intro">Have a project in mind, a question, or just want to connect? I'd love to hear from you!</p>
+                <div class="contact-wrapper">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                        <p><i class="fas fa-phone"></i> (Optional) +1 234 567 8900</p>
+                        <div class="social-links">
+                            <a href="your-linkedin-url" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="your-github-url" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="your-twitter-url" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <!-- Add more social links as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Your Name. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ff5e57;"></i></p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
